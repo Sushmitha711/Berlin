@@ -1,0 +1,14 @@
+.card-body{
+    text-align: left;
+}
+.card-header{
+    width: 100%;
+}
+.style{
+    border: none;
+    padding: 5px 10px;
+    border-radius: 7px;
+    background-color: rgb(39, 37, 37);
+    color: aliceblue;
+}
+
