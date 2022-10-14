@@ -1,3 +1,5 @@
+//ContentModal is used for getting perticular case details when we click on to the perticular case 
+
 import React,{useEffect, useState} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
@@ -15,6 +17,8 @@ const useStyles = makeStyles((theme) => ({
   },
   paper: {
    width:"60%",
+   display:"block",
+   textDecoration: "none",
    height:"100%",
    backgroundColor:"#39445a",
    border:"1px solid #282c34",
@@ -39,7 +43,6 @@ export default function ContentModal({children, data}) {
   const fetchdata=async()=>{
     const {data}=await axios.get(`https://bikeindex.org/api/v3/search?${id}`);
     setContent(data);
-    console.log(data);
   }
   useEffect(() => {
    fetchdata();
@@ -81,8 +84,7 @@ export default function ContentModal({children, data}) {
                   </ul>
                </div>
               </div>  
-          )}
-          
+          )}   
         </Fade>
       </Modal>
     </div>

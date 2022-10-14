@@ -1,3 +1,5 @@
+//Showing the api information in the form of cards .
+
 import React from 'react';
 import "./SingleContent.css";
 import { unavailableLandscape } from '../../Config/config';
@@ -5,8 +7,7 @@ import ContentModal from '../ContentModal/ContentModal';
 
 const SingleContent = ({data}) => {
  
-    return (
-      
+    return (    
       <ContentModal data={data}>
         <div className='container'>
       <div className='card'>  
@@ -27,6 +28,7 @@ const SingleContent = ({data}) => {
   </div>
   </div>
 </ContentModal>
+
     );
 }
 

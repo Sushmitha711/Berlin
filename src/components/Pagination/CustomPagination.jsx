@@ -1,11 +1,13 @@
 import React from 'react';
-import Pagination from "@material-ui/lab/Pagination"
+import Pagination from "@material-ui/lab/Pagination";
 
 
-const CustomPagination = ({setPage, numberOfPages=20}) => {
+// used for pagination
+
+const CustomPagination = ({setPage, numberOfPages=4854}) => {
    const handlePageChange=(page)=>{
     setPage(page);
-     window.scroll(0,0);
+    window.scroll(0,0);
    }
    
    

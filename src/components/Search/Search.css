@@ -1,0 +1,10 @@
+.search {
+    display: flex;
+    margin: 10px 0;
+  }
+  .forms{
+    padding: 5px 50px;
+    margin: 10px 6px;
+    border:1px solid gray;
+    cursor: pointer;
+  }
