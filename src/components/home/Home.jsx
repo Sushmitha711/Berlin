@@ -41,7 +41,7 @@ const Home = () => {
                          <SingleContent key={bike.id} data={bike}/>
                         ))
                     }  
-                    </>:<h1 className='data'>data is loading please wait for some time...</h1>
+                    </>:<><img src='https://image.emojisky.com/520/8420520-middle.png' className="Loading"/></>
                   }
                   
                   <CustomPagination setPage={setPage}/>

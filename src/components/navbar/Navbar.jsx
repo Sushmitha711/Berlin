@@ -13,8 +13,8 @@ const Navbar = () => {
                 <span className='logo'><FontAwesomeIcon icon={faMotorcycle}/>Police Department of Berlin</span>
                 <div className='navItems'>
                     <span>Stolen Bikes</span>
-                    <Link to={"Search"} className='navButton'>Search</Link>
                     <button className='navButton'>Login</button>
+                    <button className='navButton'>Register</button>
                 </div>
             </div>
         </div>
